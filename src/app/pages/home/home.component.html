@@ -1,3 +1,9 @@
 
 <main>
+  <form action="" class="search-bar" (ngSubmit)="onSearch()">
+	<input type="search" name="search" pattern=".*\S.*" required placeholder="Search in Quran..." [(ngModel)]="searchQuery" />
+	<button class="search-btn" type="submit">
+		<span>Search in Qu'ran</span>
+	</button>
+</form>
 </main>
