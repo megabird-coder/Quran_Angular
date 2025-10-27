@@ -1,9 +1,28 @@
 
 <main>
-  <form action="" class="search-bar" (ngSubmit)="onSearch()">
-	<input type="search" name="search" pattern=".*\S.*" required placeholder="Search in Quran..." [(ngModel)]="searchQuery" />
-	<button class="search-btn" type="submit">
-		<span>Search in Qu'ran</span>
-	</button>
-</form>
+  	<form action="" class="search-bar" (ngSubmit)="onSearch()">
+		<input type="search" name="search" pattern=".*\S.*" required placeholder="Search in Quran..." [(ngModel)]="searchQuery" />
+		<button class="search-btn" type="submit">
+			<span>Search in Qu'ran</span>
+		</button>
+	</form>
+	<div id="toggle" class="button_container">
+    	<span class="top"></span>
+    	<span class="middle"></span>
+    	<span class="bottom"></span>
+  	</div>
+
+  	<div id="overlay" class="overlay">
+    	<nav class="overlay-menu">
+      		<ul>
+        		<li><a routerLink="/quaran">Quran</a></li>
+        		<li><a routerLink="/salat-time">Salat Time</a></li>
+        		<li><a routerLink="/hadith">Hadith</a></li>
+				<li><a routerLink="/sunna">Sunna</a></li>
+        		<li><a routerLink="/tasfir">Tafsir</a></li>
+				<li><a routerLink="/login">Login</a></li>
+      		</ul>
+    	</nav>
+  	</div>
+
 </main>
